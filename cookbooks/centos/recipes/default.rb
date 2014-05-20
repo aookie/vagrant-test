@@ -1,7 +1,14 @@
 #cookbooks/centos/recipes/default.rb
 
-# install mysql
 package "mysql-server" do
+  action :install
+end
+
+package "nginx" do
+  action :install
+end
+
+package "php" do
   action :install
 end
 
